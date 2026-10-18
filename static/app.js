@@ -613,3 +613,4 @@ function toggleTheme() {
   localStorage.setItem('chabita_theme', isDark ? 'dark' : 'light');
   themeIcon.textContent = isDark ? '☀️' : '🌙';
 }
+

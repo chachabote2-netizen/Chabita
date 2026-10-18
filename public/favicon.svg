@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="chabitaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="50%" stop-color="#FFA07A" />
+      <stop offset="100%" stop-color="#FFD166" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#FF6B6B" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="28" fill="url(#chabitaGrad)" filter="url(#shadow)"/>
+  <!-- Cute friendly face -->
+  <circle cx="34" cy="44" r="6" fill="#FFFFFF"/>
+  <circle cx="66" cy="44" r="6" fill="#FFFFFF"/>
+  <path d="M 34 58 Q 50 72 66 58" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Blush -->
+  <circle cx="26" cy="54" r="5" fill="#FFFFFF" opacity="0.35"/>
+  <circle cx="74" cy="54" r="5" fill="#FFFFFF" opacity="0.35"/>
+  <!-- Little Sparkle antenna -->
+  <path d="M 50 20 L 50 26" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="50" cy="16" r="3" fill="#FFFFFF"/>
+</svg>
+

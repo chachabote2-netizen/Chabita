@@ -192,14 +192,17 @@ async def chat_sync(request: ChatRequest):
         return {"reply": text}
 
 # Mount static files (Frontend)
+public_dir = os.path.join(os.path.dirname(__file__), "public")
 static_dir = os.path.join(os.path.dirname(__file__), "static")
-if not os.path.exists(static_dir):
-    os.makedirs(static_dir, exist_ok=True)
+frontend_dir = public_dir if os.path.exists(public_dir) else static_dir
 
-app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
+if os.path.exists(frontend_dir):
+    app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="static")
+
 
 if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))
     print(f"Starting Chabita AI on port {port}...")
     uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
+

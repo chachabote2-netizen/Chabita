@@ -23,6 +23,17 @@
 
 ---
 
+## 🚀 How to Deploy on Vercel (1-Click Import)
+
+1. Go to **[vercel.com/new](https://vercel.com/new)**.
+2. Select your repository: **`dullareymart19webde/Chabita`** and click **Import**.
+3. Under **Environment Variables**, add:
+   - **Key:** `GEMINI_API_KEY`
+   - **Value:** *(your Gemini API key)*
+4. Click **Deploy**! Vercel will build and launch your site with a live URL like `https://chabita.vercel.app`.
+
+---
+
 ## 🚀 How to Deploy on Render (Step-by-Step)
 
 You can publish Chabita to [Render](https://render.com) for **free** in less than 3 minutes.
@@ -119,3 +130,4 @@ Chabita/
 
 ## 🛡️ License & Credits
 Crafted with ❤️ powered by Google Gemini.
+
